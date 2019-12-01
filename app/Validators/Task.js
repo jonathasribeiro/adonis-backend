@@ -2,15 +2,15 @@
 
 const Antl = use('Antl')
 
-class ResetPassword {
+class Task {
   get validateAll () {
     return true
   }
 
   get rules () {
     return {
-      token: 'required',
-      password: 'required|confirmed'
+      title: 'required',
+      due_date: 'date'
     }
   }
 
@@ -19,4 +19,4 @@ class ResetPassword {
   }
 }
 
-module.exports = ResetPassword
+module.exports = Task
